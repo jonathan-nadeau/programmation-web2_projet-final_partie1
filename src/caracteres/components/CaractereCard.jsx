@@ -1,16 +1,8 @@
-import { useEffect } from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
-import useGetData from '../../hooks/useGetData';
 
 const CaractereCard = ({ caractere }) => {
   const { Header, Title, Subtitle } = Card;
   const { Item } = ListGroup;
-
-  const homePlanet = useGetData();
-
-  useEffect(() => {
-    console.log(caractere);
-  }, []);
 
   return (
     <Card text='dark' className='text-decoration-none h-100 shadow'>

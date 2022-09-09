@@ -10,7 +10,9 @@ const useGetData = (method, dataToGet = []) => {
   const [data, setData] = useState([]);
   const getData = useCallback(async (id) => method(id), [method]);
   const getAllData = useCallback(async () => {
-    const newData = await Promise.all(dataToGet.map(async (url) => await getData(getUrlId(url))));
+    const newData = await Promise.all(
+      dataToGet.map(async (url) => await getData(getUrlId(url)))
+    );
     setData(newData.filter((obj) => isNotEmpty(obj)));
   }, [dataToGet.length]);
   useEffect(() => {

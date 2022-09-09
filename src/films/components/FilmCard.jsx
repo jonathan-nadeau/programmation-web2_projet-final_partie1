@@ -1,11 +1,8 @@
 import { Card, ListGroup } from 'react-bootstrap';
-import useGetData from '../../hooks/useGetData';
 
 const FilmCard = ({ film }) => {
   const { Header, Title, Subtitle, Body, Text } = Card;
   const { Item } = ListGroup;
-
-  const homePlanet = useGetData();
 
   return (
     <Card text='dark' className='text-decoration-none h-100 shadow'>
