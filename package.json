@@ -1,5 +1,6 @@
 {
   "name": "programmation-web-2_projet-final",
+  "homepage": "https://starwars-api.jonathan-nadeau.ca/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
